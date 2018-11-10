@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="searchTextBox" HorizontalAlignment="Left" Height="28" Margin="52,35,0,0" TextWrapping="Wrap" Text="Search text" VerticalAlignment="Top" Width="126" FontSize="16"/>
-        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="183,35,0,0" VerticalAlignment="Top" Width="80" Height="28"/>
-        <Button x:Name="changeDestinationButton" Content="Select save folder" HorizontalAlignment="Left" Margin="358,35,0,0" VerticalAlignment="Top" Width="122" Height="28"/>
-        <Label x:Name="saveToLabel" Content="Save to ..." HorizontalAlignment="Left" Margin="492,35,0,0" VerticalAlignment="Top" Height="28" Width="74"/>
+        <TextBox x:Name="searchTextBox" HorizontalAlignment="Left" Height="28" Margin="52,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" FontSize="16" Background="White" SelectionOpacity="1"/>
+        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="183,35,0,0" VerticalAlignment="Top" Width="80" Height="28" Click="searchButton_Click"/>
+        <Button x:Name="changeDestinationButton" Content="Select save folder" HorizontalAlignment="Left" Margin="358,35,0,0" VerticalAlignment="Top" Width="122" Height="28" Click="changeDestinationButton_Click"/>
+        <Label x:Name="targetDirectory" HorizontalAlignment="Left" Margin="492,35,0,0" VerticalAlignment="Top" Height="28" Width="253"/>
         <ScrollViewer HorizontalAlignment="Left" Height="249" Margin="52,95,0,0" VerticalAlignment="Top" Width="693">
             <WrapPanel Name="imagesPanel">
             </WrapPanel>
